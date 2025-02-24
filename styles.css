@@ -1,0 +1,274 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Las secciones que estarán ocultas inicialmente */
+.hidden {
+    display: none;
+}
+
+/* Sección activa */
+.active {
+    display: block;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #ffd6da;
+    color: #333;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+header {
+    background-color: #81d5d8;
+    color: #fff;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+nav .logo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav .nav-links li {
+    font-size: 18px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav .nav-links li a:hover {
+    color: #215153;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url('images/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 0 20px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero .cta-button {
+    background-color: #81d5d8;
+    padding: 12px 25px;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #215153;
+}
+
+/* Sección de Sobre mí */
+.about {
+    background-color: #ffd6da;
+    padding: 80px 20px;
+}
+
+.about h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.about p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Sección de Música */
+.music {
+    background-color: #ffd6da;
+    padding: 80px 20px;
+}
+
+.music h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.music-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.music-list .song {
+    background-color: #cbafe6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.music-list .song h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+/* Sección de Tour */
+.tour {
+    padding: 80px 20px;
+}
+
+.tour h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.tour-dates {
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.tour-dates li {
+    margin-bottom: 10px;
+}
+
+/* Sección de Contacto */
+.contact {
+    background-color: #fff;
+    padding: 80px 20px;
+}
+
+.contact h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.contact form input, .contact form textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.contact form input:focus, .contact form textarea:focus {
+    border-color: #f39c12;
+    outline: none;
+}
+
+.contact form button {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #426364;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+/* Contenedor de los videos */
+.video-container {
+    position: relative;
+    width: 100%; /* Esto asegura que el contenedor ocupe el 100% del ancho disponible */
+    padding-bottom: 56.25%; /* Esto establece una relación de aspecto de 16:9 (común en YouTube) */
+    height: 0; /* El alto será determinado por el padding */
+    overflow: hidden; /* Esto asegura que el contenido no sobresalga */
+    background: #000; /* Fondo negro para el área de video */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* El iframe (video) */
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el iframe al 100% del contenedor */
+    height: 100%; /* Ajusta el iframe al 100% del contenedor */
+    border: none; /* Elimina el borde por defecto del iframe */
+}
